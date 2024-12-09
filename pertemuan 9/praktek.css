@@ -1,0 +1,11 @@
+p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+ }
+ a{
+     color: blue;
+ }
+header{
+     background-color: rgb(123, 188, 226);
+     font-size: 15px;
+ }

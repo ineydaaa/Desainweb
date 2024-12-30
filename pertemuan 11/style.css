@@ -1,0 +1,90 @@
+a.smooth{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 2em;
+    width: 10em;
+    border-radius: 1,5em;
+    color: #fff3;
+    background-color: mediumblue;
+    transition-property: background-color;
+    transition-duration: 0,3s;
+}
+a.smooth:hover, a.smooth:focus {
+    background-color: red;
+}
+.navbar{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+
+.navbar:hover{
+    background-color: red;
+    transition: 2s;
+    box-shadow: 10px,10px,blue;
+    border: 1px dashed;
+}
+
+.kotak{
+    background-color: red;
+    height: 100px;
+    width: 150px;
+    transition: width 2s, height 4s;
+    border-radius: 25px;
+    box-shadow: 10px,10px,10px, blue;
+}
+.kotak:hover,video{
+    height: 300px;
+    width: 500px;
+}
+
+@keyframes warna{
+    0%{background-color: red;}
+    20%{background-color: rgb(213, 118, 216);}
+    40%{background-color: rgb(111, 46, 196);}
+    60%{background-color: rgb(48, 127, 231);}
+    80%{background-color: rgb(27, 185, 233);}
+    100%{background-color: rgb(52, 207, 194);}
+    120%{background-color: rgb(112, 240, 112);}
+}
+
+.kotak{
+    animation-name: warna;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+img:hover{
+    transform: scale(2)
+    rotate(10deg)
+    translate(10px,10px)
+    ;
+}
+
+.rounded{
+    border: 1px red;
+    text-align: center;
+    animation-name: berubah;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-duration: normal;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+    /* text-shadow: 4px,3px,2px,black;*/
+    box-shadow: 2px,3px,2px black;
+    height: max-content;
+    font-size: 40px;
+    
+}
+
+.rounded:hover{
+    transform: scale(2);
+}
+
+@keyframes berubah{
+    0%{background-color: rgb(238, 13, 227);}
+    50%{background-color: rgb(26, 10, 243);}
+    100%{background-color: rgb(25, 173, 241);}
+}
